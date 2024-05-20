@@ -1,1 +1,119 @@
-<h1>My link in bio</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #0B9DB8;
+        display: flex;
+        justify-content: center;
+        font-color: #EBEFE8;
+      }
+      .items{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+      .banner{
+        display: flex;
+        justify-content: center;
+      }
+      .bannerImage{
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail{
+        width: 48px;
+        height: 48px;
+        border: 1px solid black;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .name{
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+      }
+      .socialIcons{
+        display: flex;
+        justify-content: space-around;
+      }
+      .socialIcons a  {
+        color: #fffffe;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+      }
+      .link {
+        background-color: #3B9E90;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: 2px solid #3B9E90;
+        border-radius: 25px;
+      }
+      .link:hover{
+        border: 2px solid #EBEFE8;
+      }
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="items">
+      <div class="banner">
+        <img src="./assets/dogProfilePic.jpg" class="bannerImage">
+      </div>
+
+      <div class="name">
+        Bobby Sandoval
+      </div>
+
+      <div class="socialIcons">
+        <a href="https://github.com/Testell" target="_blank">
+          GitHub
+        </a>
+
+        <a href="https://github.com/Testell" target="_blank">
+          Twitter
+        </a>
+
+        <a href="https://github.com/Testell" target="_blank">
+          Instagram
+        </a>
+
+        <a href="https://github.com/Testell" target="_blank">
+          Youtube
+        </a>
+      </div>
+
+      <div class="link">
+        <img src="./assets/pawsChicagoLogo.png" class="thumbnail">
+
+        <a target="_blank" href="https://www.pawschicago.org/how-to-help/volunteer">Volunteer at Paws Chicago</a>
+      </div>
+
+      <div class="link">
+        <img src="./assets/duoDogLogo.png" class="thumbnail">
+
+        <a target="_blank" href="https://duodogs.org/?gad_source=1&gclid=Cj0KCQjw6auyBhDzARIsALIo6v_M-eC_ishMSzVOsAGBN432oqHkdlL_wvYwhaGQSiNq1Z7UO4q7u30aAhUuEALw_wcB">
+            Get assistance in finding a support dog
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
